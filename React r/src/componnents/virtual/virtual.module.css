@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 6rem 0;
+  padding: 2rem;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.left > :nth-child(1) {
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+}
+.left > :nth-child(2) {
+  font-size: 1.6rem;
+  width: 20rem;
+}
+.left > :nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.left .img_p {
+  position: absolute;
+  width: 10rem;
+  bottom: -1.5em;
+}
+.right .wrapper {
+  width: 30rem;
+}
+@media screen and (max-width: 856px) {
+  .container {
+    gap: 1rem;
+    flex-direction: column;
+    alignitems: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 0 2rem;
+    text-align: center;
+  }
+}
